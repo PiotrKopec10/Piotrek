@@ -3,12 +3,12 @@
  */
 
 
-#include <iostream>
+#include <iostream>  // Biblioteka
 
 
 auto main() -> int
 {
-    std::cout << "Hello, World\n";
-
+   std::cout << "Hello, World, Witam Świat\n ";  // Wstep
+    std::cout<<	"Witam i o zdrowie pytam\n";
     return 0;
 }
