@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-auto zapytanie(std ::string const prompt) -> int
+auto Najwieksza(std ::string const prompt) -> int
 {
     if (not prompt.empty()) {
         std ::cout << prompt;
@@ -11,11 +11,13 @@ auto zapytanie(std ::string const prompt) -> int
 }
 auto main() -> int
 {
-    auto const a = zapytanie("a=");
-    if (a < 0) {
-        std::cout << -a << "\n";
-    } else {
-        std::cout << a << "\n";
+    int i;
+    auto const a = Najwieksza("a=");
+    auto const b = Najwieksza("b=");
+    for (i = a; i < b; ++i) {
+        std::cout << "Liczby te to:" << i << "\n";
     }
+
+
     return 0;
 }
