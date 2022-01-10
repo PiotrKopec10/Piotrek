@@ -6,9 +6,9 @@ auto is_divisible(int a, int b) -> bool
     else
         return false;
 }
-auto is_even(int a, int b) -> bool
+auto is_even(int a) -> bool
 {
-    if(is_divisible(a,b)==1)
+    if(is_divisible(a,2)==1)
         return true;
     else
         return false;
@@ -18,7 +18,5 @@ int main()
     int a,b;
     std::cout<<"Podaj liczbe: ";
     std::cin>>a;
-    std::cout<<"Podaj dzielnik: ";
-    std::cin>>b;
-    std::cout<< is_even(a,b) <<"\n";
+    std::cout<< is_even(a) <<"\n";
 }
